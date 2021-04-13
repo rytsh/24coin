@@ -28,7 +28,7 @@ onDestroy(()=> {
       <span>BTCUSD</span>
     </div>
     <div class="price">
-      <span>{$storeData?.a}</span>
+      <span>{$storeData?.a.slice(0, -4)}</span>
       <span class="icon">$</span>
     </div>
     <div class="info">
@@ -51,6 +51,7 @@ onDestroy(()=> {
     border-radius: 2px;
     box-shadow: 10px 10px #333;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 700px;
     padding: 12px 20px;
